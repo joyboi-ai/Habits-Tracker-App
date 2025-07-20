@@ -5,6 +5,12 @@ The app features a beautiful splash screen, typing animations, and WebView integ
 
 ---
 
+<p align="center">
+  <img src="preview.png" alt="App Preview" width="600"/>
+</p>
+
+---
+
 ## 💻 My Favorite Tools & Technologies
 
 <div align="center">
@@ -39,7 +45,7 @@ The app features a beautiful splash screen, typing animations, and WebView integ
         <br>Linux
       </td>
       <td align="center" width="96">
-        <img src="https://profilinator.rishav.dev/skills-assets/vscode-original.svg" alt="VS Code" width="48" height="48" />
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code" width="48" height="48" />
         <br>VS Code
       </td>
     </tr>
@@ -143,4 +149,4 @@ Contributions are always welcome!
 ## ⭐ Support
 
 If you find this project helpful, please give it a star ⭐ on GitHub.  
-It motivates me to improve and add more
+It motivates
