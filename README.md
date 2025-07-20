@@ -1,50 +1,96 @@
-# Welcome to your Expo app 👋
+# 🌟 Habits Tracker App  
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A **React Native + Expo** based **Habits Tracker App** designed to help users organize tasks into categories, track progress, and stay motivated with timely notifications.  
+The app features a **beautiful splash screen**, **typing animations**, and a **WebView integration** for an extended experience.
 
-## Get started
+---
 
-1. Install dependencies
+## 📂 Project Structure
 
-   ```bash
-   npm install
-   ```
+.
+├── app
+│ ├── _layout.tsx # Navigation stack & status bar setup
+│ ├── index.tsx # Welcome screen with typing effect & WebView
+│ └── temp/ # Legacy vanilla JS/HTML logic for categories & tasks
+│
+├── assets
+│ ├── images/ # Icons and splash screen images
+│ ├── fonts/ # Custom fonts
+│
+├── android # Native Android project files (for building APK)
+├── package.json # Dependencies & scripts
+├── app.json # Expo configuration (icons, splash screen, etc.)
+└── tsconfig.json # TypeScript configuration
 
-2. Start the app
+markdown
+Copy
+Edit
 
-   ```bash
-    npx expo start
-   ```
+---
 
-In the output, you'll find options to open the app in a
+## ✨ Features
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+### **👋 Welcome Screen**  
+- Displays **app logo**, **name**, and a **typing effect** with motivational quotes.  
+- A **"Continue" button** opens a **WebView** with an external site.
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+### **🔔 Push Notifications**  
+- **Expo Notifications** schedules **motivational reminders**.  
+- **Development Mode:** Sends notifications every minute (up to 5 times).  
+- **Production:** Daily reminders to encourage habit tracking.
 
-## Get a fresh project
+### **🌐 WebView Integration**  
+- After the welcome screen, the app loads an **external web app** seamlessly via WebView.
 
-When you're ready, run:
+### **📌 Category & Task Logic** (Legacy `app/temp`)  
+- Predefined categories like **Personal**, **Work**, **Shopping**, **Coding**, etc.  
+- Users can **add, delete, or complete tasks** (stored in localStorage in vanilla JS version).
 
+---
+
+## 🚀 How to Run
+
+### **1. Install dependencies**
 ```bash
-npm run reset-project
-```
+npm install
+2. Start the app
+bash
+Copy
+Edit
+npx expo start
+You can run it on Android Emulator, iOS Simulator, Expo Go, or web.
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+⚙ Customization
+📝 Categories & Tasks: Modify app/temp for default categories or add new ones.
 
-## Learn more
+🎨 Icons & Branding: Replace files in assets/images/.
 
-To learn more about developing your project with Expo, look at the following resources:
+💬 Notification Messages: Update strings in app/index.tsx.
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+🛠 Tech Stack
+<div align="center"> <img src="https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React Native" /> <img src="https://img.shields.io/badge/Expo-000020?style=for-the-badge&logo=expo&logoColor=white" alt="Expo" /> <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" /> <img src="https://img.shields.io/badge/Expo_Router-4630EB?style=for-the-badge&logo=react-router&logoColor=white" alt="expo-router" /> <img src="https://img.shields.io/badge/WebView-35495E?style=for-the-badge&logo=android&logoColor=white" alt="WebView" /> <img src="https://img.shields.io/badge/Expo_Notifications-FFCA28?style=for-the-badge&logo=google-cloud-messaging&logoColor=black" alt="Expo Notifications" /> </div>
+📸 Screenshots (Add Later)
+You can add screenshots of the Welcome Screen, WebView, and Notifications here.
 
-## Join the community
+🎥 Demo Video (Optional)
+Add a YouTube video link of your app demo here with a clickable thumbnail.
 
-Join our community of developers creating universal apps.
+🤝 Contributing
+Contributions are always welcome!
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Fork the repository
+
+Create a feature branch: git checkout -b feature/NewFeature
+
+Commit your changes: git commit -m 'Add NewFeature'
+
+Push to your branch: git push origin feature/NewFeature
+
+Submit a Pull Request
+
+⭐ Support
+If you find this project helpful, please give it a star ⭐ on GitHub.
+It motivates me to improve and add more features!
+
+📜 License
+This project is licensed under the MIT License.
