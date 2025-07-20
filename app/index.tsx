@@ -134,7 +134,7 @@ export default function Index() {
             resizeMode="contain"
           />
           <Text style={styles.subtitle}>Habits Tracker</Text>
-          {/* <Text style={styles.typingText}>{typedText}</Text> */}
+          <Text style={styles.typingText}>{typedText}</Text>
           <TouchableOpacity style={styles.button} onPress={() => setShowWebView(true)}>
             <Text style={styles.buttonText}>Continue</Text>
           </TouchableOpacity>
@@ -160,7 +160,7 @@ const styles = StyleSheet.create({
   },
   subtitle: {
     fontSize: 28,
-    color: "dodgerblue", // ← CSS-style color name for future color changes 
+    color: "skyblue", // ← CSS-style color name for future color changes 
     fontWeight: "600",
   }
   ,
@@ -171,10 +171,11 @@ const styles = StyleSheet.create({
     minHeight: 28,
   },
   button: {
-    backgroundColor: "#007bff",
+    backgroundColor: "skyblue",
     paddingVertical: 12,
     paddingHorizontal: 30,
     borderRadius: 10,
+    marginTop:290,
   },
   buttonText: {
     color: "#fff",
